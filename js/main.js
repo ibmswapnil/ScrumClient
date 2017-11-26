@@ -11,7 +11,7 @@ function getLocation(name,status) {
         navigator.geolocation.getCurrentPosition(function(position){
           var value = getData(name);
           console.log(value);
-          if(value.length=0){
+          if(value.length==0){
           sendDataToServer(position,name,status,false);
         }else{
           sendDataToServer(position,name,status,true);
